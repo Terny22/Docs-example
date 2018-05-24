@@ -3,4 +3,27 @@
 # only main files contain this front matter, not partials.
 ---
 
+  .logo-container {
+    margin: 0 auto;
+    width: 144px;
+    height: 44px;
+    background-image: url(../../images/supertech-weblogo.png);
+  }
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    #sidebar-icon-links {
+      margin-top: 0.5rem;
+    }
+    .nav-container {
+      flex-grow: 1;
+    }
+  }
+
+@media (min-width: 49rem) {
+  .logo-container {
+    margin: 0;
+  }
+}
 @import "hydeout";

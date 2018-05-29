@@ -1,6 +1,7 @@
 <div id="sidebar">
   <header>
-    <div class="logo-container"></div>
+    <div class="logo-container"><img src="../images/agrolog_logo.svg"></div>
+    <div class="logo-title">agrolog</div>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
@@ -14,10 +15,6 @@
         {% include sidebar-nav-links.html %}
     </div>
   <div>
-      {% if site.version %}
-      <span class="site-version">Currently v{{ site.version }}</span>
-      {% endif %}
-      {% include sidebar-icon-links.html %}
-      {% include copyright.html %}
+
   </div>
 </div>

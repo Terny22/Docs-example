@@ -5,25 +5,49 @@
 
   .logo-container {
     margin: 0 auto;
-    width: 144px;
-    height: 44px;
-    background-image: url(../../images/supertech-weblogo.png);
+    width: 280px;
+    img {
+      width: 100%;
+    }
   }
-  #sidebar {
+  .logo-title {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-family: "Source Sans Pro", serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.5rem;
+  }
+  .home.index #sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    #sidebar-icon-links {
-      margin-top: 0.5rem;
-    }
+    padding-top: 1rem;
     .nav-container {
       flex-grow: 1;
+    }
+    .site-title {
+      font-size: 1.25rem;
     }
   }
 
 @media (min-width: 49rem) {
   .logo-container {
     margin: 0;
+  }
+  body #sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+    .nav-container {
+      flex-grow: 1;
+    }
+    .site-title {
+      font-size: 1.25rem;
+      text-align: center;
+    }
   }
 }
 @import "hydeout";
